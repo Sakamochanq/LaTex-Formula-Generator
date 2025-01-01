@@ -52,18 +52,27 @@ header {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   resize: none;
-  width: 500px;
-  height: 200px;
+  width: 800px;
+  height: 170px;
   padding: 15px;
   border: 1px solid #474747;
   border-radius: 5px;
 }
 
-.previewBox {
+.preview-wrapper {
   margin-top: 40px;
-  width: 500px;
+  width: 800px;
   height: 120px;
   background-color: #eeeeee;
   border-radius: 20px;
   border: #474747 solid 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LaTex {
+  text-align: center;
+  font-size: 1.7rem;
 }

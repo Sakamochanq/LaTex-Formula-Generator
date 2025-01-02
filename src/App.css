@@ -82,16 +82,15 @@ header {
 }
 
 @media screen and (max-width: 800px) {
-  .latex-container {
-    width: 90%;
-  }
-
   #inputBox {
-    width: 100%;
+    width: 350px;
   }
 
   .preview-wrapper {
-    width: 100%;
+    width: 350px;
+  }
+  .LaTex {
+    font-size: 1.3rem;
   }
   
 }

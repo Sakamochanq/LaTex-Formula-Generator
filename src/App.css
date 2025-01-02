@@ -76,3 +76,18 @@ header {
   text-align: center;
   font-size: 1.7rem;
 }
+
+@media screen and (max-width: 800px) {
+  .latex-container {
+    width: 90%;
+  }
+
+  #inputBox {
+    width: 100%;
+  }
+
+  .preview-wrapper {
+    width: 100%;
+  }
+  
+}

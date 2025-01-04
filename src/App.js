@@ -1,5 +1,4 @@
 import Header from './components/Header';
-import Generator from './components/Generator';
 import Button from './components/Button';
 import './App.css';
 
@@ -8,7 +7,6 @@ function App() {
     <div className="App">
       <Header />
       <br /><br /><br />
-      {/* <Generator /> */}
       <Button />
     </div>
   );

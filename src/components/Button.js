@@ -44,7 +44,7 @@ export const Button = () => {
               <option value={0}>文字・記号</option>
               <option value={1}>演算子</option>
               <option value={2}>論理</option>
-              <option value={3}>指数</option>
+              <option value={3}>指数・対数</option>
               <option value={4}>総和</option>
               <option value={5}>集合</option>
               <option value={6}>行列</option>
@@ -90,9 +90,13 @@ export const Button = () => {
                 <button onClick={() =>Toggle('\\oplus')}>非他的論理和</button>
             </div>}
 
-        {/* 指数 */}
+        {/* 指数・対数 */}
         {selectedIndex === 3 && 
             <div className="button-wrapper">
+                <button onClick={() =>Toggle('x^{n}')}>累乗</button>
+                <button onClick={() =>Toggle('\\sqrt[n]{x}')}>n乗根</button>
+                <button onClick={() =>Toggle('\\log_{10}{x}')}>log</button>
+                <button onClick={() =>Toggle('\\ln{x}')}>ln</button>
             </div>}
 
         {/* 総和 */}

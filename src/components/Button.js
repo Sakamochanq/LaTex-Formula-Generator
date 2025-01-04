@@ -103,7 +103,14 @@ export const Button = () => {
         {/* 集合 */}
         {selectedIndex === 5 && 
             <div className="button-wrapper">
-            
+                <button onClick={() =>Toggle('\\cup')}>和集合</button>
+                <button onClick={() =>Toggle('\\cap')}>積集合</button>
+                <button onClick={() =>Toggle('\\in')}>属する</button>
+                <button onClick={() =>Toggle('\\ni')}>属する[逆]</button>
+                <button onClick={() =>Toggle('\\subset')}>部分集合</button>
+                <button onClick={() =>Toggle('\\subseteq')}>部分集合[逆]</button>
+                <button onClick={() =>Toggle('\\notin')}>要素の否定</button>
+                <button onClick={() =>Toggle('(\\overline{A \\cup B}=\\overline{A} \\cap\\overline{B})')}>ド・モルガンの法則</button>
             </div>}
 
         {/* 行列 */}

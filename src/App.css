@@ -94,10 +94,14 @@ header {
 /* Button */
 
 .button-container {
+  margin-top: 45px;
+}
+
+.selectbox-wrapper {
+  margin-bottom: 45px;
   align-items: center;
   justify-content: center;
   display: flex;
-  margin-top: 45px;
 }
 
 /* SelectBox */

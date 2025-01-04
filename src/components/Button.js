@@ -26,7 +26,7 @@ export const Button = () => {
   }, [latex, selectedIndex]);
 
   return (
-    <div>
+    <div className='main-container'>
       <div className="latex-container">
         <textarea value={latex} id="inputBox" onChange={handleChange} />
         <div className="preview-wrapper">
@@ -55,6 +55,15 @@ export const Button = () => {
         {/* 文字・記号 */}
         {selectedIndex === 0 &&
             <div className="button-wrapper">
+                <button onClick={() =>Toggle('\\bf {ABC}')}>ボールド体</button>
+                <button onClick={() =>Toggle('\\it {ABC}')}>イタリック体</button>
+                <button onClick={() =>Toggle('\\sf {ABC}')}>サンセリフ体</button>
+                <button onClick={() =>Toggle('\\mathbb {ABC}')}>白抜き文字</button>
+                <button onClick={() =>Toggle('\\overbrace {a + b + c}')}>上括弧</button>
+                <button onClick={() =>Toggle('\\underbrace {a + b + c}')}>下括弧</button>
+                <button onClick={() =>Toggle('\\overline {a + b + c}')}>上線</button>
+                <button onClick={() =>Toggle('\\underline {a + b + c}')}>下線</button>
+                <button onClick={() =>Toggle('\\cdots')}>トッド</button>
             </div>}
 
         {/* 演算子 */}

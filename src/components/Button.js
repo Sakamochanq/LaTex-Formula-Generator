@@ -69,11 +69,25 @@ export const Button = () => {
         {/* 演算子 */}
         {selectedIndex === 1 && 
             <div className="button-wrapper">      
+                <button onClick={() =>Toggle('\\lt')}>＜</button>
+                <button onClick={() =>Toggle('\\leq')}>≦</button>
+                <button onClick={() =>Toggle('\\gt')}>＞</button>
+                <button onClick={() =>Toggle('\\geq')}>≧</button>
+                <button onClick={() =>Toggle('\\angle')}>角</button>
+                <button onClick={() =>Toggle('\\perp')}>垂直</button>
+                <button onClick={() =>Toggle('\\parallel')}>平行</button>
             </div>}
 
         {/* 論理 */}
         {selectedIndex === 2 && 
             <div className="button-wrapper">
+                <button onClick={() =>Toggle('\\to')}>→</button>
+                <button onClick={() =>Toggle('\\gets')}>←</button>
+                <button onClick={() =>Toggle('\\leftrightarrow')}>↔</button>
+                <button onClick={() =>Toggle('\\lnot')}>否定</button>
+                <button onClick={() =>Toggle('\\land')}>論理積</button>
+                <button onClick={() =>Toggle('\\lor')}>論理和</button>
+                <button onClick={() =>Toggle('\\oplus')}>非他的論理和</button>
             </div>}
 
         {/* 指数 */}

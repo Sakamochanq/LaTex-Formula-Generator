@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 const Generator = () => {
+
   const [latex, setLatex] = useState('x = {-b \\pm \\sqrt{b^2 - 4ac} \\over 2a}');
   const previewRef = useRef(null);
 

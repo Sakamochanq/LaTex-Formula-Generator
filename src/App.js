@@ -7,10 +7,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="wrapper">
-        <Generator />
-        <Button />
-      </div>
+      <br /><br /><br />
+      {/* <Generator /> */}
+      <Button />
     </div>
   );
 }

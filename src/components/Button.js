@@ -45,7 +45,7 @@ export const Button = () => {
               <option value={1}>演算子</option>
               <option value={2}>論理</option>
               <option value={3}>指数・対数</option>
-              <option value={4}>総和</option>
+              <option value={4}>総和・総乗</option>
               <option value={5}>集合</option>
               <option value={6}>行列</option>
             </select>
@@ -99,9 +99,12 @@ export const Button = () => {
                 <button onClick={() =>Toggle('\\ln{x}')}>ln</button>
             </div>}
 
-        {/* 総和 */}
+        {/* 総和・総乗 */}
         {selectedIndex === 4 && 
             <div className="button-wrapper">
+                <button onClick={() =>Toggle('\\infty')}>無限</button>
+                <button onClick={() =>Toggle('\\sum_{i=1}^{n}x_{i}')}>Σ</button>
+                <button onClick={() =>Toggle('\\prod')}>総乗</button>
             </div>}
 
         {/* 集合 */}

@@ -13,6 +13,7 @@ body {
 .App {
   display: flexbox;
   justify-items: center;
+  margin-bottom: 50px;
 }
 
 .main-container {

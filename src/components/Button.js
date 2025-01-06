@@ -34,7 +34,7 @@ export const Button = () => {
       <div className="latex-container">
         <textarea value={latex} id="inputBox" onChange={handleChange} />
         <br />
-        <input type="button" onClick={remove} value=" 削除 " />
+        <input className='removeButton' type="button" onClick={remove} value="削除" />
         <div className="preview-wrapper">
           <span
             className="LaTex"

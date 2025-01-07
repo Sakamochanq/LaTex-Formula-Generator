@@ -28,6 +28,48 @@ export const Button = () => {
   const remove = () => {
     setLatex('');
   }
+  
+  /* matrix List */
+const matrix = `\\begin{matrix}
+a & b \\\\
+c & d
+\\end{matrix}`;
+
+const pmatrix = `\\begin{pmatrix}
+a & b \\\\
+c & d
+\\end{pmatrix}`;
+
+const bmatrix = `\\begin{bmatrix}
+a & b \\\\
+c & d
+\\end{bmatrix}`;
+
+const vmatrix = `\\begin{vmatrix}
+a & b \\\\
+c & d
+\\end{vmatrix}`;
+
+const arraymatrix = `\\left(
+\\begin{array}{ccc}
+a & b & c \\\\
+d & e & f \\\\
+g & h & i
+\\end{array}
+\\right)`;
+  
+const diagonalmatrix = `\\begin{pmatrix}
+\\lambda_1 & & & &  \\\\
+& \\lambda_2 & & \\Huge{0} & \\\\
+& & \\ddots & & \\\\
+& \\Huge{0} & & \\lambda_{n-1} & \\\\
+& & & & \\lambda_n
+\\end{pmatrix}`;
+
+const equationmatrix = `\\mathrm{det} A = \\begin{vmatrix}
+a & b \\\\
+c & d 
+\\end{vmatrix} = ad - bc`;
 
   return (
     <div className='main-container'>
@@ -129,6 +171,15 @@ export const Button = () => {
         {/* 行列 */}
         {selectedIndex === 6 && 
             <div className="button-wrapper">
+              <button onClick={() =>Toggle(matrix)}>正方行列</button>
+              <button onClick={() =>Toggle(pmatrix)}>括弧行列</button>
+              <button onClick={() =>Toggle(bmatrix)}>ブラケット行列</button>
+              <button onClick={() =>Toggle(vmatrix)}>パイプライン行列</button>
+              <button onClick={() =>Toggle(arraymatrix)}>array環境行列</button>
+              <button onClick={() =>Toggle(diagonalmatrix)}>対角行列</button>
+              <button onClick={() =>Toggle(equationmatrix)}>行列式</button>
+              <button onClick={() =>Toggle('\\mathrm{rank} A')}>階数</button>
+              <button onClick={() =>Toggle('\\dim A')}>次元</button>
             </div>}
 
       </div>

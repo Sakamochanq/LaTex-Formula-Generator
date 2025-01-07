@@ -96,6 +96,7 @@ c & d
               <option value={4}>総和・総乗</option>
               <option value={5}>集合</option>
               <option value={6}>行列</option>
+              <option value={7}>極限</option>
             </select>
           </label>
         </div>
@@ -180,6 +181,13 @@ c & d
               <button onClick={() =>Toggle(equationmatrix)}>行列式</button>
               <button onClick={() =>Toggle('\\mathrm{rank} A')}>階数</button>
               <button onClick={() =>Toggle('\\dim A')}>次元</button>
+            </div>}
+
+        {/* 極限 */}
+        {selectedIndex === 7 && 
+            <div className="button-wrapper">
+                <button onClick={() =>Toggle('\\lim_{x \\to a}f(x)')}>極限</button>
+                <button onClick={() =>Toggle('\\lim_{x \\to 0}f(x)')}>ゼロ</button>
             </div>}
 
       </div>

@@ -118,6 +118,10 @@ c & d
         {/* 演算子 */}
         {selectedIndex === 1 && 
             <div className="button-wrapper">      
+                <button onClick={() =>Toggle('+')}>加算</button>
+                <button onClick={() =>Toggle('-')}>減算</button>
+                <button onClick={() =>Toggle('\\times')}>乗算</button>
+                <button onClick={() =>Toggle('\\div')}>除算</button>
                 <button onClick={() =>Toggle('\\lt')}>＜</button>
                 <button onClick={() =>Toggle('\\leq')}>≦</button>
                 <button onClick={() =>Toggle('\\gt')}>＞</button>
@@ -179,8 +183,8 @@ c & d
               <button onClick={() =>Toggle(arraymatrix)}>array環境行列</button>
               <button onClick={() =>Toggle(diagonalmatrix)}>対角行列</button>
               <button onClick={() =>Toggle(equationmatrix)}>行列式</button>
-              <button onClick={() =>Toggle('\\mathrm{rank} A')}>階数</button>
-              <button onClick={() =>Toggle('\\dim A')}>次元</button>
+              <button onClick={() =>Toggle('\\mathrm{rank}')}>階数</button>
+              <button onClick={() =>Toggle('\\dim')}>次元</button>
             </div>}
 
         {/* 極限 */}

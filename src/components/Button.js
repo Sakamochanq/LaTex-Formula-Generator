@@ -76,6 +76,7 @@ c & d
       <div className="latex-container">
         <textarea value={latex} id="inputBox" onChange={handleChange} />
         <br />
+        <input className='copyButton' type="button" onClick={() => {navigator.clipboard.writeText(latex)}} value="コピー" />
         <input className='removeButton' type="button" onClick={remove} value="削除" />
         <div className="preview-wrapper">
           <span

@@ -197,7 +197,7 @@ header {
 
 button {
   margin: 10px 10px 10px 10px;
-  background-color: #7cc0ff;
+  background-color: #5cbf88;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -206,11 +206,11 @@ button {
   font-size: 1rem;
 }
 button:hover {
-  background-color: #4da6ff;
+  background-color: #4ca574;
   transition: ease-in-out 0.2s;
 }
 button:active {
-  background-color: #7cc0ff;
+  background-color: #5cbf88;
   transition: ease-in-out 0.1s;
 }
 

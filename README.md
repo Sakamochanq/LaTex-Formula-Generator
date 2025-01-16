@@ -1,3 +1,6 @@
+<a href="https://github.com/ellerbrock/open-source-badges/">
+    <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103">
+</a>
 <div align="center">
     <br>
     <h1>LaTex Formula Generator</h1>

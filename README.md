@@ -1,5 +1,5 @@
 <a href="https://github.com/ellerbrock/open-source-badges/">
-    <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103">
+    <img src="https://badges.frapsoft.com/os/v1/open-source.png?v=103">
 </a>
 <div align="center">
     <br>

@@ -209,6 +209,7 @@ c & d
                 <button onClick={() =>Toggle('4 \\pi r^{2}')}>球の表面積</button>
                 <button onClick={() =>Toggle('(a+b)(a-b) = a^2 -b^2')}>因数分解・展開</button>
                 <button onClick={() =>Toggle('a^2 + b^2 = c^2')}>三平方の定理</button>
+                <button onClick={() =>Toggle('x = {-b \\pm \\sqrt{b^2 - 4ac} \\over 2a}')}>解</button>
             </div>}
 
       </div>

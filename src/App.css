@@ -42,10 +42,13 @@ header {
 }
 
 .nav-logo {
+  user-select: none;
+  pointer-events: none;
   margin-right: auto;
-  font-size: 25px;
-  color: #ffffff;
   margin-left: 30px;
+  /* width: 40px; */
+  font-size: 20px;
+  color: #ffffff;
 }
 
 .menu-item {
@@ -149,7 +152,6 @@ header {
   .LaTex {
     font-size: 1.3rem;
   }
-  
 }
 
 /* Button */

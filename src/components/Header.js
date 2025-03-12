@@ -3,7 +3,8 @@ import React from 'react'
 export const Header = () => {
   return (
     <header>
-      <h3 className="nav-logo">GL</h3>
+      <h3 className="nav-logo">LaTex</h3>
+      {/* <img className="nav-logo" src={process.env.PUBLIC_URL + "./assets/LaTex-Formula-Generator-Logo.png"}/> */}
       <nav>
         <ul className='menu'>
           <li className='menu-item'><a href="#">Home</a></li>

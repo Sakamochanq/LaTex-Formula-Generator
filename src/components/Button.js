@@ -98,6 +98,7 @@ c & d
               <option value={5}>集合</option>
               <option value={6}>行列</option>
               <option value={7}>極限</option>
+              <option value={8}>数学公式</option>
             </select>
           </label>
         </div>
@@ -193,6 +194,21 @@ c & d
             <div className="button-wrapper">
                 <button onClick={() =>Toggle('\\lim_{x \\to a}f(x)')}>極限</button>
                 <button onClick={() =>Toggle('\\lim_{x \\to 0}f(x)')}>ゼロ</button>
+            </div>}
+
+        {/* 数学公式 */}
+        {selectedIndex === 8 && 
+            <div className="button-wrapper">      
+                <button onClick={() =>Toggle('y = ax')}>比例</button>
+                <button onClick={() =>Toggle('y = {a \\over{x}}')}>反比例</button>
+                <button onClick={() =>Toggle('y = ax + b')}>一次関数</button>
+                <button onClick={() =>Toggle('y = ax^{2}')}>二次関数</button>
+                <button onClick={() =>Toggle('2 \\pi r')}>円周</button>
+                <button onClick={() =>Toggle('\\pi r^{2}')}>円の面積</button>
+                <button onClick={() =>Toggle('(\\sqrt{a})^2 = a')}>平方根</button>
+                <button onClick={() =>Toggle('4 \\pi r^{2}')}>球の表面積</button>
+                <button onClick={() =>Toggle('(a+b)(a-b) = a^2 -b^2')}>因数分解・展開</button>
+                <button onClick={() =>Toggle('a^2 + b^2 = c^2')}>三平方の定理</button>
             </div>}
 
       </div>
